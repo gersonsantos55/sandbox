@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+label,
+.images-wrap,
+a {
+    margin: 0 auto;
+}
+
+.images-wrap {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+#original-image,
+#grayscale-image {
+    max-width: 50%;
+}
+
+#upload-button {
+    display: flex;
+    align-items: center;
+}
+
+#upload-button,
+#download-button button {
+    height: 35px;
+    min-width: 100px;
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#download-button {
+    display: none;
+}
+
+#upload-button:hover,
+#download-button button:hover {
+    background-color: #ccc;
+}

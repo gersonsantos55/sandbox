@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayscale Image Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1>
+        Grayscale Image Converter
+    </h1>
+
+    <p id="description">
+        Select an image file from your computer to convert to grayscale:
+    </p>
+
+    <label for="file-input">
+        <div id="upload-button">
+            Upload image
+        </div>
+    </label>
+    <input type="file" id="file-input" accept="image/*" hidden />
+
+    <div class="images-wrap">
+        <img id="original-image" />
+        <img id="grayscale-image" />
+    </div>
+
+    <a id="download-button">
+        <button>
+            Download
+        </button>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
