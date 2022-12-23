@@ -3,7 +3,7 @@ var originalImage = document.getElementById('original-image');
 var grayscaleImage = document.getElementById('grayscale-image');
 var downloadButton = document.getElementById('download-button');
 
-fileInput.onchange = function () {
+fileInput.onchange = () => {
     var file = fileInput.files[0];
 
     if (!file.type.match('image.*')) {
@@ -20,7 +20,7 @@ fileInput.onchange = function () {
     downloadButton.download = `${fileName}_grayscale.${fileExtension}`;
 };
 
-originalImage.onload = function () {
+originalImage.onload = () => {
     var grayscaleBase64 = grayscale(originalImage);
     grayscaleImage.src = grayscaleBase64;
     downloadButton.href = grayscaleBase64;
