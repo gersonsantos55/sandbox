@@ -7,7 +7,7 @@ fileInput.onchange = () => {
     var file = fileInput.files[0];
 
     if (!file.type.match('image.*')) {
-        alert("Please select an image file to convert to grayscale.");
+        alert('Please select an image file to convert to grayscale.');
         return;
     }
 
