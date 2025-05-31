@@ -50,22 +50,20 @@ document.body.style =
     'display: flex;' +
     'flex-direction: column;';
 
-function onInput(value) {
-    console.log(value.data);
+function getText(value) {
+    value;
 }
 
 var textEl = document.createElement('p');
+textEl.id = 'text';
 textEl.style = 'width: 300px; margin: 20px auto;';
 textEl.textContent = '';
+document.body.appendChild(textEl);
 
 var inputEl = document.createElement('input');
 inputEl.id = 'input';
 inputEl.style = 'text-align: center; height: 35px; border: 2px, solid, purple; border-radius: 5px;';
 inputEl.addEventListener('input', () => {
-    if (document.getElementById('input').value === '') {
-        document.body.appendChild(textEl);
-    } else{
-        document.body.removeChild(textEl);
-    }
+    document.getElementById('text').textContent = getText(document.getElementById('input').value);
 });
 document.body.appendChild(inputEl);
